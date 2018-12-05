@@ -2,7 +2,9 @@
 Sample project to extract information from fixer.io and store the result on a DB
 
 
-   Owner: Jhon Carrillo
+   Owner: Jhon Carrillo+-
+   
+   
    currency_cal.py --lookback=<lookback> --base=<base_currency> --currency=<currency_codes>
    --lookback: Years to analyze
    --base: Base currency
