@@ -1,4 +1,7 @@
 # exchangerates
+
+
+
 Sample project to extract information from fixer.io and store the result on a DB
 
 
