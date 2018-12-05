@@ -24,7 +24,7 @@ class process_currency:
 
     """
     def __init__(self,base_currency,lookback,currency_codes):
-        self.access_key="cd80bab28c7437195892659f267cbae5"
+        self.access_key=[YOUR TOKEN]
         self.base=base_currency
         self.symbols=currency_codes
         self.lookback=int(lookback)
@@ -35,8 +35,6 @@ class process_currency:
         self.sql="Insert into stg_exchange_currency (base_code,dt,rate,currency_code) values "
         self.truncsql="Delete from  stg_exchange_currency"
         self.avgsql="Select  avg(rate),currency_code,base_code from stg_exchange_currency group by currency_code,base_code "
-        #self.url="http://data.fixer.io/api/timeseries?access_key=%s&start_date=%s&end_date=%s&base=%s&symbols=%s" % (self.access_key,self.startdate,self.enddate,self.base,self.symbols)
-
         self.url="http://data.fixer.io/api/%s?access_key=%s&base=%s&symbols=%s"
 
     def create_connection(self):
