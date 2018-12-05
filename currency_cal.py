@@ -20,10 +20,14 @@ import urllib
 
 class process_currency:
     """
-    Class Initialization
+    Class definition
 
     """
     def __init__(self,base_currency,lookback,currency_codes):
+       """
+        Class Initialization
+
+       """
         self.access_key=[YOUR TOKEN]
         self.base=base_currency
         self.symbols=currency_codes
